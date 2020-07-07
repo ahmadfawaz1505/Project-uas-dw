@@ -1,0 +1,720 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/22/2020 9:23:11 PM"
+  DTS:CreationName="SSIS.Package.3"
+  DTS:CreatorComputerName="DESKTOP-I0B7FAJ"
+  DTS:CreatorName="DESKTOP-I0B7FAJ\fawaz"
+  DTS:DTSID="{BC02149D-FB41-439E-BB50-08D2BDB53C5A}"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:LastModifiedProductVersion="11.0.5583.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{E1C0E8E7-0247-4D74-A6B0-DC29153F7F67}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C08D94FF-AF12-4640-B90F-C49A384DD480}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DATAWAREHOUSE_NILAI;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{C08D94FF-AF12-4640-B90F-C49A384DD480}DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5CDF59DF-9640-430A-9466-A86831153821}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DATAWAREHOUSE_NILAI;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{5CDF59DF-9640-430A-9466-A86831153821}DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 10]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E124A64E-1BC0-47F4-8AE6-5ED9FF89914E}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 10">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DATAWAREHOUSE_NILAI;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{E124A64E-1BC0-47F4-8AE6-5ED9FF89914E}DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 10;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{72B903D6-87C3-4009-A8D9-C2E0FA732BA7}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DATAWAREHOUSE_NILAI;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{72B903D6-87C3-4009-A8D9-C2E0FA732BA7}DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 2;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{ADCDB7D3-3B6F-48B1-9B06-5091BAD3D150}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DATAWAREHOUSE_NILAI;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{ADCDB7D3-3B6F-48B1-9B06-5091BAD3D150}DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 3;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 4]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F2C36D1A-1A91-49BD-9898-38DC4B9BA6B5}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DATAWAREHOUSE_NILAI;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{F2C36D1A-1A91-49BD-9898-38DC4B9BA6B5}DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 4;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 5]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F1294DE4-C529-4397-BA38-811D1ABF8B31}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DATAWAREHOUSE_NILAI;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{F1294DE4-C529-4397-BA38-811D1ABF8B31}DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 5;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 6]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5E2DF723-8B03-4DB1-A05C-6C6DE6D849EF}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DATAWAREHOUSE_NILAI;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{5E2DF723-8B03-4DB1-A05C-6C6DE6D849EF}DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 6;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 7]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{86303D58-939A-4E83-88E3-DACC9C17C813}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 7">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DATAWAREHOUSE_NILAI;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{86303D58-939A-4E83-88E3-DACC9C17C813}DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 7;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 8]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8EA62A59-DB1B-4D45-8AC0-E491F64DB912}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 8">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DATAWAREHOUSE_NILAI;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{8EA62A59-DB1B-4D45-8AC0-E491F64DB912}DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 8;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 9]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0E8F5715-65E7-4BEA-93F3-88813EAC4D90}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 9">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DATAWAREHOUSE_NILAI;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{0E8F5715-65E7-4BEA-93F3-88813EAC4D90}DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 9;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0B964AAD-FD64-428F-9056-FB0F37C4D612}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DBSEKOLAH;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{0B964AAD-FD64-428F-9056-FB0F37C4D612}DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C09F7C8D-5C8A-45EB-AFA3-E6C03D5C0D4C}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DBSEKOLAH;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{C09F7C8D-5C8A-45EB-AFA3-E6C03D5C0D4C}DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 10]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{9629A6ED-4051-427B-91EB-542A6181204A}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 10">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DBSEKOLAH;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{9629A6ED-4051-427B-91EB-542A6181204A}DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 10;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 11]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{30D5CB29-86D0-4CC2-AE0A-A476D8CE66C7}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 11">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DBSEKOLAH;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{30D5CB29-86D0-4CC2-AE0A-A476D8CE66C7}DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 11;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E1D53021-A6DC-4EBC-B749-25E7C457EC49}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DBSEKOLAH;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{E1D53021-A6DC-4EBC-B749-25E7C457EC49}DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 2;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{CEC688A6-428C-43E0-A6E7-D8D55D59B513}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DBSEKOLAH;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{CEC688A6-428C-43E0-A6E7-D8D55D59B513}DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 3;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 4]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{BEECBD91-974C-4D5A-94AF-0494408E23D5}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DBSEKOLAH;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{BEECBD91-974C-4D5A-94AF-0494408E23D5}DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 4;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 5]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{EABFFD92-6BDC-4E4E-838F-1E5617DC3318}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DBSEKOLAH;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{EABFFD92-6BDC-4E4E-838F-1E5617DC3318}DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 5;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 6]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{9C543A8B-655C-414A-9D38-AD2BD34950AE}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DBSEKOLAH;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{9C543A8B-655C-414A-9D38-AD2BD34950AE}DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 6;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 7]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7BF85010-E7F8-406F-B1BC-44CED6016E10}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 7">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DBSEKOLAH;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{7BF85010-E7F8-406F-B1BC-44CED6016E10}DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 7;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 8]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0E40E47D-E164-4F67-ACE8-3DF92566E6B5}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 8">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DBSEKOLAH;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{0E40E47D-E164-4F67-ACE8-3DF92566E6B5}DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 8;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 9]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C00CCEC0-AE08-482C-98C3-6CD7C8039B36}"
+      DTS:ObjectName="DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 9">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-I0B7FAJ\FAWAZ;Initial Catalog=DBSEKOLAH;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{C00CCEC0-AE08-482C-98C3-6CD7C8039B36}DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 9;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{6F34EC09-858F-45FC-9F89-0705D365AFE3}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Data Conversion"
+              componentClassID="{62B1106C-7DB8-4EC8-ADD6-4C664DFFC54A}"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Destination"
+              componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[DIMMAPEL]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 10]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DATAWAREHOUSE_NILAI 10]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[KODE_MAPEL]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="KODE_MAPEL"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[KODE_MAPEL]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[KODE_MAPEL]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NAMA_MAPEL]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NAMA_MAPEL"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NAMA_MAPEL]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[NAMA_MAPEL]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[KODE_MAPEL]"
+                      dataType="wstr"
+                      length="10"
+                      name="KODE_MAPEL" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NAMA_MAPEL]"
+                      dataType="wstr"
+                      length="50"
+                      name="NAMA_MAPEL" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Source"
+              componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[TBLMAPEL]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 11]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-I0B7FAJ\FAWAZ.DBSEKOLAH 11]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[KODE_MAPEL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[KODE_MAPEL]"
+                      length="10"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[KODE_MAPEL]"
+                      name="KODE_MAPEL"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[NAMA_MAPEL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NAMA_MAPEL]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[NAMA_MAPEL]"
+                      name="NAMA_MAPEL"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[KODE_MAPEL]"
+                      dataType="wstr"
+                      length="10"
+                      name="KODE_MAPEL" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NAMA_MAPEL]"
+                      dataType="wstr"
+                      length="50"
+                      name="NAMA_MAPEL" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[KODE_MAPEL]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[KODE_MAPEL]"
+                      name="KODE_MAPEL" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NAMA_MAPEL]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NAMA_MAPEL]"
+                      name="NAMA_MAPEL" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Data Conversion Output]"
+              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[OLE DB Source Output]"
+              endId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql11">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task"
+          TopLeft="88,61" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Data Flow Task\OLE DB Source"
+          TopLeft="110,77" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Data Flow Task\Data Conversion"
+          TopLeft="310,194" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="505,308" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="185,119">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="203,75"
+              Start="0,0"
+              End="203,67.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.5"
+                    Point2="0,37.5"
+                    Point3="4,37.5" />
+                  <mssgle:LineSegment
+                    End="199,37.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="199,37.5"
+                    Point2="203,37.5"
+                    Point3="203,41.5" />
+                  <mssgle:LineSegment
+                    End="203,67.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Data Conversion Output]"
+          TopLeft="388,236">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="202.5,72"
+              Start="0,0"
+              End="202.5,64.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32"
+                    Point2="0,36"
+                    Point3="4,36" />
+                  <mssgle:LineSegment
+                    End="198.5,36" />
+                  <mssgle:CubicBezierSegment
+                    Point1="198.5,36"
+                    Point2="202.5,36"
+                    Point3="202.5,40" />
+                  <mssgle:LineSegment
+                    End="202.5,64.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
